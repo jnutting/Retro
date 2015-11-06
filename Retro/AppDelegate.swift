@@ -57,5 +57,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         return false
     }
 
+    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
+        let splitController = self.window?.rootViewController as! UISplitViewController
+        let navigationController = splitController.viewControllers.first as! UINavigationController
+        navigationController.viewControllers[0].restoreUserActivityState(userActivity)
+//        navigationController.topViewController?.restoreUserActivityState(userActivity)
+        return true
+    }
 }
 
