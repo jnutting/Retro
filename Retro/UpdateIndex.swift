@@ -24,6 +24,7 @@ func updateIndexForComputer(computer: Computer) -> NSUserActivity {
         }
     }
     
-    //    activity.becomeCurrent()
+    activity.contentAttributeSet = attributeSet
+    activity.becomeCurrent()
     return activity
 }
