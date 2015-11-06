@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>company</key>
+			<string>Apple</string>
+			<key>model</key>
+			<string>II</string>
+			<key>productionStartYear</key>
+			<string>1977</string>
+			<key>cpu</key>
+			<string>6502</string>
+			<key>cpuSpeed</key>
+			<string>1.023 MHz</string>
+			<key>ram</key>
+			<string>4 KB</string>
+			<key>color</key>
+			<string>16-color palette</string>
+			<key>maxScreenResolution</key>
+			<string>280×192</string>
+			<key>image</key>
+			<string>Apple_II_IMG_4212.jpg</string>
+		</dict>
+		<dict>
+			<key>company</key>
+			<string>Atari</string>
+			<key>model</key>
+			<string>400</string>
+			<key>productionStartYear</key>
+			<string>1979</string>
+			<key>cpu</key>
+			<string>6502</string>
+			<key>cpuSpeed</key>
+			<string>1.79 MHz</string>
+			<key>ram</key>
+			<string>16 KB</string>
+			<key>color</key>
+			<string>256-color palette</string>
+			<key>maxScreenResolution</key>
+			<string>320x192</string>
+			<key>image</key>
+			<string>Atari-400-Comp.jpg</string>
+		</dict>
+	</array>
+</dict>
+</plist>

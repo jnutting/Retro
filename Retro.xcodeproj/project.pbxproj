@@ -15,6 +15,11 @@
 		049714B71BECB1ED0012A0AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049714B51BECB1ED0012A0AB /* LaunchScreen.storyboard */; };
 		049714C21BECB1ED0012A0AB /* RetroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049714C11BECB1ED0012A0AB /* RetroTests.swift */; };
 		049714CD1BECB1ED0012A0AB /* RetroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049714CC1BECB1ED0012A0AB /* RetroUITests.swift */; };
+		049714DB1BECB2030012A0AB /* Computers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049714DA1BECB2030012A0AB /* Computers.plist */; };
+		049714DE1BECB4370012A0AB /* Apple_II_IMG_4212.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 049714DD1BECB4370012A0AB /* Apple_II_IMG_4212.jpg */; };
+		049714E01BECB4730012A0AB /* Atari-400-Comp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 049714DF1BECB4730012A0AB /* Atari-400-Comp.jpg */; };
+		049714E21BECB4C60012A0AB /* ComputerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049714E11BECB4C60012A0AB /* ComputerDataSource.swift */; };
+		049714E41BECB51E0012A0AB /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049714E31BECB51E0012A0AB /* Computer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		049714C81BECB1ED0012A0AB /* RetroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		049714CC1BECB1ED0012A0AB /* RetroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroUITests.swift; sourceTree = "<group>"; };
 		049714CE1BECB1ED0012A0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049714DA1BECB2030012A0AB /* Computers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Computers.plist; sourceTree = "<group>"; };
+		049714DD1BECB4370012A0AB /* Apple_II_IMG_4212.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apple_II_IMG_4212.jpg; sourceTree = "<group>"; };
+		049714DF1BECB4730012A0AB /* Atari-400-Comp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Atari-400-Comp.jpg"; sourceTree = "<group>"; };
+		049714E11BECB4C60012A0AB /* ComputerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerDataSource.swift; sourceTree = "<group>"; };
+		049714E31BECB51E0012A0AB /* Computer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +110,16 @@
 			isa = PBXGroup;
 			children = (
 				049714AA1BECB1ED0012A0AB /* AppDelegate.swift */,
+				049714E31BECB51E0012A0AB /* Computer.swift */,
+				049714E11BECB4C60012A0AB /* ComputerDataSource.swift */,
 				049714AC1BECB1ED0012A0AB /* MasterViewController.swift */,
 				049714AE1BECB1ED0012A0AB /* DetailViewController.swift */,
 				049714B01BECB1ED0012A0AB /* Main.storyboard */,
 				049714B31BECB1ED0012A0AB /* Assets.xcassets */,
 				049714B51BECB1ED0012A0AB /* LaunchScreen.storyboard */,
 				049714B81BECB1ED0012A0AB /* Info.plist */,
+				049714DA1BECB2030012A0AB /* Computers.plist */,
+				049714DC1BECB41A0012A0AB /* Images */,
 			);
 			path = Retro;
 			sourceTree = "<group>";
@@ -126,6 +140,15 @@
 				049714CE1BECB1ED0012A0AB /* Info.plist */,
 			);
 			path = RetroUITests;
+			sourceTree = "<group>";
+		};
+		049714DC1BECB41A0012A0AB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				049714DF1BECB4730012A0AB /* Atari-400-Comp.jpg */,
+				049714DD1BECB4370012A0AB /* Apple_II_IMG_4212.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +258,9 @@
 				049714B71BECB1ED0012A0AB /* LaunchScreen.storyboard in Resources */,
 				049714B41BECB1ED0012A0AB /* Assets.xcassets in Resources */,
 				049714B21BECB1ED0012A0AB /* Main.storyboard in Resources */,
+				049714DB1BECB2030012A0AB /* Computers.plist in Resources */,
+				049714DE1BECB4370012A0AB /* Apple_II_IMG_4212.jpg in Resources */,
+				049714E01BECB4730012A0AB /* Atari-400-Comp.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				049714AF1BECB1ED0012A0AB /* DetailViewController.swift in Sources */,
+				049714E21BECB4C60012A0AB /* ComputerDataSource.swift in Sources */,
+				049714E41BECB51E0012A0AB /* Computer.swift in Sources */,
 				049714AD1BECB1ED0012A0AB /* MasterViewController.swift in Sources */,
 				049714AB1BECB1ED0012A0AB /* AppDelegate.swift in Sources */,
 			);
