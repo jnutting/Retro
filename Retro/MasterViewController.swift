@@ -1,4 +1,5 @@
 import UIKit
+import CoreSpotlight
 
 class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
@@ -52,8 +53,18 @@ class MasterViewController: UITableViewController {
         return cell
     }
     
+    private func nameFromActivity(activity: NSUserActivity) -> String? {
+        if activity.activityType == CSSearchableItemActionType {
+            let name = activity.userInfo?[CSSearchableItemActivityIdentifier] as? String
+            return name
+        }
+        else {
+            let name = activity.userInfo?["name"] as? String
+            return name
+        }
+    }
     override func restoreUserActivityState(activity: NSUserActivity) {
-        guard let name = activity.userInfo?["name"] as? String else {
+        guard let name = nameFromActivity(activity) else {
             NSLog("I can't restore from this activity: \(activity)")
             return
         }
