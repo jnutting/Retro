@@ -1,4 +1,7 @@
 import Foundation
+import CoreSpotlight
+import MobileCoreServices
+import UIKit
 
 func updateIndexForComputer(computer: Computer) -> NSUserActivity {
     let activity = NSUserActivity(activityType: "com.thoughtbot.retro.computer.show")
@@ -8,6 +11,19 @@ func updateIndexForComputer(computer: Computer) -> NSUserActivity {
     activity.eligibleForHandoff = false
     activity.eligibleForSearch = true
     
-    activity.becomeCurrent()
+    let attributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeImage as String)
+    attributeSet.title = computer.shortDescription
+    attributeSet.contentDescription = "\(computer.shortDescription)\n\(computer.cpuDescription)\n\(computer.productionStartYear)"
+    attributeSet.thumbnailData = UIImagePNGRepresentation(computer.image)
+    
+    let item = CSSearchableItem(uniqueIdentifier: computer.shortDescription, domainIdentifier: "retro-computer", attributeSet: attributeSet)
+    
+    CSSearchableIndex.defaultSearchableIndex().indexSearchableItems([item]) { error in
+        if let error = error {
+            NSLog("indexing error: \(error)")
+        }
+    }
+    
+    //    activity.becomeCurrent()
     return activity
 }
