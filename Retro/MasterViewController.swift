@@ -3,6 +3,7 @@ import UIKit
 class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     let objects = ComputerDataSource().computers
+    var latestActivity: NSUserActivity?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let object = objects[indexPath.row]
+                latestActivity = updateIndexForComputer(object)
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()

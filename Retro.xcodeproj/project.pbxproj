@@ -20,6 +20,7 @@
 		049714E01BECB4730012A0AB /* Atari-400-Comp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 049714DF1BECB4730012A0AB /* Atari-400-Comp.jpg */; };
 		049714E21BECB4C60012A0AB /* ComputerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049714E11BECB4C60012A0AB /* ComputerDataSource.swift */; };
 		049714E41BECB51E0012A0AB /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049714E31BECB51E0012A0AB /* Computer.swift */; };
+		049714E61BECCD6D0012A0AB /* UpdateIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049714E51BECCD6D0012A0AB /* UpdateIndex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		049714DF1BECB4730012A0AB /* Atari-400-Comp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Atari-400-Comp.jpg"; sourceTree = "<group>"; };
 		049714E11BECB4C60012A0AB /* ComputerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerDataSource.swift; sourceTree = "<group>"; };
 		049714E31BECB51E0012A0AB /* Computer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
+		049714E51BECCD6D0012A0AB /* UpdateIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateIndex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				049714E11BECB4C60012A0AB /* ComputerDataSource.swift */,
 				049714AC1BECB1ED0012A0AB /* MasterViewController.swift */,
 				049714AE1BECB1ED0012A0AB /* DetailViewController.swift */,
+				049714E51BECCD6D0012A0AB /* UpdateIndex.swift */,
 				049714B01BECB1ED0012A0AB /* Main.storyboard */,
 				049714B31BECB1ED0012A0AB /* Assets.xcassets */,
 				049714B51BECB1ED0012A0AB /* LaunchScreen.storyboard */,
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				049714AF1BECB1ED0012A0AB /* DetailViewController.swift in Sources */,
+				049714E61BECCD6D0012A0AB /* UpdateIndex.swift in Sources */,
 				049714E21BECB4C60012A0AB /* ComputerDataSource.swift in Sources */,
 				049714E41BECB51E0012A0AB /* Computer.swift in Sources */,
 				049714AD1BECB1ED0012A0AB /* MasterViewController.swift in Sources */,
